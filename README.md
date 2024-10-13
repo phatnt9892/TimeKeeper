@@ -116,6 +116,8 @@ Future enhancements could include SMS notifications to remind employees about lo
 +---------------------------------------------------------------------------------------------------------------+
 ```
 
+---
+
 ## Sources (Prompts Used with ChatGPT)
 
 1. "Help me design a C# console application for time tracking."
