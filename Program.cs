@@ -1,9 +1,11 @@
-﻿namespace TimeKeeper
+﻿using System.Text.Json;
+using System.IO;
+namespace TimeKeeper
 {
     public class Employee
     {
         public string Name { get; set; }
-        public List<WorkLog> WorkLogs { get; set; }
+        public List<WorkLog> WorkLogs { get; set; } = new List<WorkLog>();
 
         public Employee(string name)
         {
@@ -36,22 +38,28 @@
     internal class Program
     {
         static List<Employee> employees = new List<Employee>();
+        static string filePath = "timekeeper_data.json"; // JSON file path
 
         static void Main(string[] args)
         {
-            bool running = true;
-            while (running)
+            // Load existing data from the JSON file when the application starts
+            LoadDataFromJson(filePath);
+
+            // Main menu loop
+            while (true)
             {
-                Console.WriteLine("\n--- TimeKeeper Menu ---");
+                Console.WriteLine("\n----------------------------");
+                Console.WriteLine("       Time Keeper");
+                Console.WriteLine("----------------------------\n");
                 Console.WriteLine("1. Add Employee");
                 Console.WriteLine("2. Remove Employee");
                 Console.WriteLine("3. List Employees");
                 Console.WriteLine("4. Clock-In");
                 Console.WriteLine("5. Clock-Out");
                 Console.WriteLine("6. Review Logs");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("7. Exit and Save");
 
-                Console.Write("Choose an option: ");
+                Console.Write("\nSelect an option (1-7): ");
                 string choice = Console.ReadLine();
 
                 switch (choice)
@@ -75,10 +83,11 @@
                         ReviewLogs();
                         break;
                     case "7":
-                        running = false;
-                        break;
+                        // Save data to JSON before exiting
+                        SaveDataToJson(filePath);
+                        return;
                     default:
-                        Console.WriteLine("Invalid choice. Try again.");
+                        Console.WriteLine("Invalid option. Try again.");
                         break;
                 }
             }
@@ -91,6 +100,7 @@
             string name = Console.ReadLine();
             employees.Add(new Employee(name));
             Console.WriteLine($"Employee {name} added successfully.");
+
         }
 
         // 2. Remove Employee
@@ -221,6 +231,57 @@
             else
             {
                 Console.WriteLine("Employee not found.");
+            }
+        }
+        // 7. Save Data to JSON and Exit
+        static void SaveDataToJson(string filePath)
+        {
+            try
+            {
+                // Serialize the employee data to JSON format
+                string json = JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true });
+
+                // Write the JSON data to a file
+                File.WriteAllText(filePath, json);
+
+                Console.WriteLine("Data saved to JSON file successfully.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred while saving data: {ex.Message}");
+            }
+        }
+        // Method to Load Data from JSON File
+        static void LoadDataFromJson(string filePath)
+        {
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    // Read the JSON data from the file
+                    string json = File.ReadAllText(filePath);
+
+                    // Deserialize the JSON data into the list of employees
+                    employees = JsonSerializer.Deserialize<List<Employee>>(json);
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"An error occurred while loading data: {ex.Message}");
+                }
+            }
+            else
+            {
+                try
+                {
+                    // Initialize empty dataset if no file is found, but skip the message
+                    employees = new List<Employee>();
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"An error occurred while initializing data: {ex.Message}");
+                }
             }
         }
     }
