@@ -83,17 +83,19 @@ Future enhancements could include SMS notifications to remind employees about lo
 ### Main Menu
 
 ```text
-+-----------------------------+
-| --- TimeKeeper Menu ---      |
-| 1. Add Employee              |
-| 2. Remove Employee           |
-| 3. List Employees            |
-| 4. Clock-In                  |
-| 5. Clock-Out                 |
-| 6. Review Logs               |
-| 7. Exit                      |
-| Choose an option: 4          |
-+-----------------------------+
++--------------------------------+
+| ---------------------------     |
+|         Time Keeper             |
+| ---------------------------     |
+| 1. Add Employee                 |
+| 2. Remove Employee              |
+| 3. List Employees               |
+| 4. Clock-In                     |
+| 5. Clock-Out                    |
+| 6. Review Logs                  |
+| 7. Exit and Save                |
+| Select an option (1-7):         |
++--------------------------------+
 ```
 
 ### Clock-In Screen
