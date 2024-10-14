@@ -18,25 +18,28 @@ Future enhancements could include SMS notifications to remind employees about lo
 ## Features
 
 - **Feature 1**: Add Employee.
-  - **Primary**: Phat Thanh Nguyen
-  - **Secondary**: Mary Eguzoraku
+  - **Primary**: Godwin Adewale
+  - **Secondary**: Phat Thanh Nguyen
 
 - **Feature 2**: Remove Employee.
-  - **Primary**: Phat Thanh Nguyen
-  - **Secondary**: Mary Eguzoraku
+  - **Primary**: Godwin Adewale
+  - **Secondary**: Phat Thanh Nguyen
 
 - **Feature 3**: List Employees.
-  - **Primary**: Phat Thanh Nguyen
-  - **Secondary**: Mary Eguzoraku
+  - **Primary**: Godwin Adewale
+  - **Secondary**: Phat Thanh Nguyen
 
 - **Feature 4**: Clock-In.
   - **Primary**: Phat Thanh Nguyen
+  - **Secondary**: Mary Eguzoraku
 
 - **Feature 5**: Clock-Out.
   - **Primary**: Phat Thanh Nguyen
+  - **Secondary**: Mary Eguzoraku
 
 - **Feature 6**: Review Logs.
   - **Primary**: Phat Thanh Nguyen
+  - **Secondary**: Godwin Adewale
 
 ---
 
@@ -54,27 +57,27 @@ Future enhancements could include SMS notifications to remind employees about lo
 ## Task Board (Agile Progress Tracker)
 
 ### Backlog (Not Started)
-- Create base structure of the application (Godwin)
+- Create base structure of the application (Phat)
 - Research future enhancements (Mary)
-- Add comments to code (Mary)
+- Add comments to code (Godwin)
 
 ### In Progress (Currently Being Worked On)
 - Refactor code for better performance (Godwin)
 
 ### In Review
 - Implement Review Logs feature (Phat, being reviewed by Godwin)
-- Implement Clock-In feature (Phat, being reviewed by Godwin)
-- Implement Clock-Out feature (Phat, being reviewed by Godwin)
-- Task board setup (Godwin, being reviewed by Phat)
+- Implement Clock-In feature (Phat, being reviewed by Mary)
+- Implement Clock-Out feature (Phat, being reviewed by Mary)
+- Task board setup (Phat)
 
 ### Completed
 - Initial project setup in Visual Studio (Phat)
-- Implement Add Employee feature (Phat, reviewed by Mary)
-- Implement Remove Employee feature (Phat, reviewed by Mary)
-- Implement List Employees feature (Phat, reviewed by Mary)
-- Create task board (Godwin)
-- Research Agile task tracking strategies (Godwin)
-- Console user interface mockup (Mary)
+- Implement Add Employee feature (Godwin, reviewed by Phat)
+- Implement Remove Employee feature (Godwin, reviewed by Phat)
+- Implement List Employees feature (Godwin, reviewed by Phat)
+- Create task board (Phat)
+- Research Agile task tracking strategies (Phat)
+- Console user interface mockup (Phat)
 
 ---
 
