@@ -19,12 +19,15 @@ Future enhancements could include SMS notifications to remind employees about lo
 
 - **Feature 1**: Add Employee.
   - **Primary**: Phat Thanh Nguyen
+  - **Secondary**: Mary Eguzoraku
 
 - **Feature 2**: Remove Employee.
   - **Primary**: Phat Thanh Nguyen
+  - **Secondary**: Mary Eguzoraku
 
 - **Feature 3**: List Employees.
   - **Primary**: Phat Thanh Nguyen
+  - **Secondary**: Mary Eguzoraku
 
 - **Feature 4**: Clock-In.
   - **Primary**: Phat Thanh Nguyen
@@ -59,16 +62,16 @@ Future enhancements could include SMS notifications to remind employees about lo
 - Refactor code for better performance (Godwin)
 
 ### In Review
-- Implement List Employees feature (Phat, being reviewed by Mary)
 - Implement Review Logs feature (Phat, being reviewed by Godwin)
+- Implement Clock-In feature (Phat, being reviewed by Godwin)
+- Implement Clock-Out feature (Phat, being reviewed by Godwin)
 - Task board setup (Godwin, being reviewed by Phat)
 
 ### Completed
 - Initial project setup in Visual Studio (Phat)
-- Implement Add Employee feature (Phat)
-- Implement Remove Employee feature (Phat)
-- Implement Clock-In feature (Phat)
-- Implement Clock-Out feature (Phat)
+- Implement Add Employee feature (Phat, reviewed by Mary)
+- Implement Remove Employee feature (Phat, reviewed by Mary)
+- Implement List Employees feature (Phat, reviewed by Mary)
 - Create task board (Godwin)
 - Research Agile task tracking strategies (Godwin)
 - Console user interface mockup (Mary)
