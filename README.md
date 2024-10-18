@@ -63,9 +63,10 @@ Future enhancements could include SMS notifications to remind employees about lo
 
 ### In Progress (Currently Being Worked On)
 - Create base structure of the application (Phat)
-- Refactor code for better performance (Godwin)
+
 
 ### In Review
+- Refactor code for better performance (Godwin)
 - Implement Review Logs feature (Phat, being reviewed by Godwin)
 - Implement Clock-In feature (Phat, being reviewed by Mary)
 - Implement Clock-Out feature (Phat, being reviewed by Mary)
