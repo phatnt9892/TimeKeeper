@@ -57,11 +57,12 @@ Future enhancements could include SMS notifications to remind employees about lo
 ## Task Board (Agile Progress Tracker)
 
 ### Backlog (Not Started)
-- Create base structure of the application (Phat)
+
 - Research future enhancements (Mary)
 - Add comments to code (Godwin)
 
 ### In Progress (Currently Being Worked On)
+- Create base structure of the application (Phat)
 - Refactor code for better performance (Godwin)
 
 ### In Review
