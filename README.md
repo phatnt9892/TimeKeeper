@@ -70,9 +70,10 @@ Future enhancements could include SMS notifications to remind employees about lo
 - Implement Review Logs feature (Phat, being reviewed by Godwin)
 - Implement Clock-In feature (Phat, being reviewed by Mary)
 - Implement Clock-Out feature (Phat, being reviewed by Mary)
-- Task board setup (Phat)
+
 
 ### Completed
+- Task board setup (Phat)
 - Initial project setup in Visual Studio (Phat)
 - Implement Add Employee feature (Godwin, reviewed by Phat)
 - Implement Remove Employee feature (Godwin, reviewed by Phat)
